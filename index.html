@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT | magasov</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/style/main.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo.svg" alt="logo" class="logo">
+
+        <nav class="navbar">
+            <a href="#">Market</a>
+            <a href="#">Features</a>
+            <a href="#">How It Works</a>
+            <a href="#">Contact us</a>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="header__button">
+            <div class="search"></div>
+            <div class="btn">
+                <div class="text-btn">Upload</div>
+                <img src="./assets/img/Upload.png" width="20px">
+                </div>
+            </div>
+    </header>
+    <section id="home" class="home">
+        <div class="home__main">
+            <div class="home__one">
+                <div class="home__h1">Discover Your</div>
+                <div class="home__h2"><img src="./assets/img/h1.svg" width="300px"></div>
+                <div class="home-h1">
+                    <div class="home__h1">NFT</div>
+                    <img src="./assets/img/vector-home.svg" width="75px">
+                </div>
+                <div class="home__p">Make the world a better place with cryptocurrency. Your guide to the world of an open financial system.</div>
+
+                <div class="btn-home-main">
+                    <div class="btn btn-home">
+                        <div>Discover Now</div>
+                        <img src="./assets/img/left.svg" width="28px">
+                    </div>
+                    <div class="btn__images">
+                        <img src="./assets/img/Ellipse 2.svg" class="btnImage1">
+                        <img src="./assets/img/Ellipse 3.svg" class="btnImage2">
+                        <img src="./assets/img/Ellipse 4.svg" class="btnImage3">
+                    </div>
+                </div>
+            </div>
+            <div class="home__one2">
+                <img src="./assets/img/home-banner.svg" width="388px">
+            </div>
+        </div>
+          <!-- position: absolute -->
+          <div class="absolute">
+            <img src="./assets/img/zvezda.png" class="zvezda">
+            <img src="./assets/img/zvezda-blue.png" class="zvezda-blue">
+            <img src="./assets/img/zvezda-yellow.png" class="zvezda-yellow">
+            <img src="./assets/img/shaddowHero.png" class="shaddowHero">
+            <img src="./assets/img/shaddowHero2.png" class="shaddowHero2">
+        </div>
+    </section>
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open')
+        }
+        // header изменение цвета 
+        const header = document.querySelector('header')
+
+        window.addEventListener('scroll', function() {
+            header.classList.toggle('sticky', this.window.scrollY > 80)
+        })
+    </script>
+</body>
+</html>
