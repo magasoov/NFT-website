@@ -6,4 +6,3 @@
 <img src="https://github.com/magasoov/NFT-website/assets/148522477/cf13699a-da2a-42ff-b401-fad9e6e44e64" width="600px"/>
 </div>
 
-![IMG_1088]()
